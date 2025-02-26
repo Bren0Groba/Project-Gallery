@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery with Lightbox</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <h1>Gallery</h1>
+
+    <!-- Button to add an image -->
+    
+
+    <input type="file" id="image-upload" accept="image/*" style="display: none" />
+
+    <div class="gallery">
+      <!-- Adicionar imagem -->
+      <div class="gallery-item add-image">
+        <div class="add-image-btn" id="add-image-btn">
+          <i class="bi bi-plus-lg"></i>
+        </div>
+      </div>
+    
+      <!-- Imagens da galeria -->
+      <div class="gallery-item">
+        <img src="img/image-1.jpg" alt="Image 1" data-src="img/image-1.jpg" class="gallery-image" />
+      </div>
+      <div class="gallery-item">
+        <img src="img/image-2.jpg" alt="Image 2" data-src="img/image-2.jpg" class="gallery-image" />
+      </div>
+      <div class="gallery-item">
+        <img src="img/image-3.jpg" alt="Image 3" data-src="img/image-3.jpg" class="gallery-image" />
+      </div>
+      <div class="gallery-item">
+        <img src="img/image-4.jpg" alt="Image 4" data-src="img/image-4.jpg" class="gallery-image" />
+      </div>
+    </div>
+    
+
+    <div class="lightbox">
+      <div class="lightbox-content">
+        <img src="" alt="Highlighted Image" class="lightbox-image" />
+      </div>
+      <a href="#" class="lightbox-close"><i class="bi bi-x"></i></a>
+    </div>
+  </body>
+</html>

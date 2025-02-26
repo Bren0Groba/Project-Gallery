@@ -1,0 +1,153 @@
+ body{
+  margin: 0;
+  padding: 0;
+  background-color: #fbe4e4;
+ }
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
+}
+
+.gallery-item {
+  flex: 0 0 calc(33.333% - 40px);
+  margin: 5px;
+  position: relative;
+  align-items: center;
+}
+
+.gallery-link {
+  display: block;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+
+
+
+.gallery-item:hover {
+  display: block;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+.lightbox-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.lightbox-image {
+  max-width: 800px;
+  object-fit: cover;
+}
+
+
+.lightbox-close:hover {
+  background-color: rgb(123, 30, 229);
+  border-color: rgb(123, 30, 229);
+  color: #000;
+}
+
+
+
+
+
+
+
+h1 {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+
+
+
+
+.add-image-btn {
+  width: 100%;
+  height: 300px; /* mesmo tamanho das imagens */
+  background-color: rgb(123, 30, 229);
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-image-btn:hover {
+  opacity: 0.7;
+}
+
+.add-image-btn i {
+  font-size: 2rem;
+  color: #888;
+}
+
+.lightbox-image {
+  max-width: 800px;
+  object-fit: cover;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.1rem 0.3rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Estilo do menu contextual */
+.context-menu {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.context-menu a {
+  display: block;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+
+.context-menu a:hover {
+  background-color: #f1f1f1;
+}
